@@ -1,0 +1,24 @@
+﻿@using mvcproject;
+
+<!--<script type="text/javascript">
+    window.onload = function(){
+        alert('ViewData["noti"]');
+    };
+</script>-->
+
+
+
+
+@if (ViewData["noti"].ToString() != "Dang nhap thanh cong")
+
+{
+    <script type="text/javascript">
+    window.onload = function(){
+        alert('@ViewData["noti"]');
+    };
+    </script>
+    Html.Partial("~/Views/Login/Index.cshtml");
+}
+
+
+
